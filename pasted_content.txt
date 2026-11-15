@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creator Pack 1 — License-Free Kids Tunes for Content Creators</title>
+<meta name="description" content="5 original, license-free kids tunes for YouTube creators. 60s loops, 30s cuts, 20s ringtones. No Content ID claims. Videos published while subscribed stay cleared forever.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' fill='%23d6ff3d'/%3E%3Crect x='3' y='10' width='3' height='5' rx='1.5' fill='%2308080a'/%3E%3Crect x='8' y='6' width='3' height='13' rx='1.5' fill='%2308080a'/%3E%3Crect x='13' y='8' width='3' height='9' rx='1.5' fill='%2308080a'/%3E%3Crect x='18' y='4' width='3' height='16' rx='1.5' fill='%2308080a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#1E1E33; --panel:#2B2B47; --panel-2:#34345A; --line:#4A4A72; --line-bright:#FFB703;
+  --ink:#FFF8E7; --muted:#B9B9D4; --lime:#D6FF3D; --magenta:#FF6B9D; --cyan:#4FC3F7;
+  --sunny:#FFD93D; --orange:#FF9F1C; --purple:#9B5DE5;
+  --mono:'Baloo 2','Fredoka',sans-serif;
+  --sans:'Baloo 2','Fredoka','Comic Sans MS',sans-serif;
+  --disp:'Fredoka','Baloo 2',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background-color:#1E1E33;background-image:linear-gradient(135deg,#1B1B30,#232344 40%,#1E2A4A 75%,#1B1B30),radial-gradient(rgba(255,255,255,.07) 2.5px, transparent 2.5px),radial-gradient(rgba(255,217,61,.09) 2.5px, transparent 2.5px);background-size:300% 300%,56px 56px,56px 56px;background-position:0% 0%,0 0,28px 28px;animation:bgDrift 16s ease-in-out infinite alternate;color:var(--ink);font-family:var(--sans);line-height:1.55;overflow-x:hidden;padding-bottom:84px;-webkit-font-smoothing:antialiased;font-size:17px}
+::selection{background:var(--sunny);color:#2B2D42}
+a{color:inherit;text-decoration:none}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#232344}
+::-webkit-scrollbar-thumb{background:#FFB703;border:2px solid #232344;border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:var(--magenta)}
+.grain{position:fixed;inset:0;z-index:999;pointer-events:none;opacity:.02;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='260' height='260' filter='url(%23n)'/%3E%3C/svg%3E")}
+.ticker{position:sticky;top:0;z-index:50;overflow:hidden;background:var(--sunny);border-bottom:3px solid #2B2D42;border-radius:0 0 18px 18px}
+.ticker-track{display:flex;width:max-content;animation:marquee 46s linear infinite}
+.ticker-half{display:flex;gap:52px;padding:9px 52px 9px 0}
+.ticker-half span{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#2B2D42;white-space:nowrap;display:flex;align-items:center;gap:10px}
+.ticker-half span b{color:#D6336C;font-weight:800}
+.ticker-half span .hl{color:var(--magenta)}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.wrap{max-width:1460px;margin:0 auto;padding:0 32px}
+.masthead{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;padding:30px 0 24px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.brand-mark{width:52px;height:52px;background:var(--magenta);border-radius:16px;border:3px solid var(--ink);display:grid;place-items:center;margin-bottom:14px;transform:rotate(-6deg);box-shadow:5px 5px 0 var(--sunny);transition:transform .25s ease}
+.brand-mark svg{width:26px;height:26px;display:block}
+.brand-mark:hover{transform:rotate(0deg) scale(1.05)}
+.brand h1{font-family:var(--disp);font-weight:700;font-size:clamp(52px,8.6vw,124px);line-height:.85;letter-spacing:.01em;white-space:nowrap;color:var(--ink)}
+.brand h1 .slash{color:var(--magenta)}
+.brand h1 .outline{color:var(--cyan);-webkit-text-stroke:0}
+.tagline{font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:16px}
+.tagline b{color:var(--lime)}
+.on-air{display:flex;flex-direction:column;align-items:flex-end;gap:12px;padding-bottom:6px}
+.on-air-top{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--magenta);animation:blink 1.4s infinite}
+@keyframes blink{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(255,45,120,.6)}50%{opacity:.35;box-shadow:0 0 0 6px rgba(255,45,120,0)}}
+.vu{display:flex;align-items:flex-end;gap:3px;height:34px}
+.vu i{width:5px;height:100%;background:var(--lime);transform-origin:bottom;border-radius:1px;animation:vu 1s ease-in-out infinite alternate}
+@keyframes vu{0%{transform:scaleY(.15);opacity:.4}100%{transform:scaleY(1);opacity:1}}
+.clock{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--muted)}
+.rail{display:flex;align-items:center;gap:6px;padding:14px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.rail a{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:9px 16px;border:2px solid transparent;border-radius:999px;transition:.18s}
+.rail a:hover{color:var(--ink);border-color:var(--line-bright)}
+.rail a.active{color:#2B2D42;background:var(--sunny);border-color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+.rail .spacer{flex:1}
+.rail .cta{color:#fff;background:var(--magenta);border:2px solid var(--ink);font-weight:700;box-shadow:3px 3px 0 var(--ink)}
+.rail .cta:hover{background:#FF4D8A;color:#fff;transform:translateY(-2px)}
+.hero{position:relative;padding:56px 0 0;border-bottom:1px solid var(--line);overflow:hidden}
+.hero-ghost{position:absolute;top:8px;right:-10px;font-family:var(--disp);font-weight:700;font-size:clamp(120px,20vw,300px);line-height:.7;color:#FFE9A8;pointer-events:none;user-select:none;letter-spacing:-.02em}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;position:relative;z-index:2}
+.eyebrow{font-family:var(--mono);font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#D6336C;margin-bottom:22px;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:'🌈';width:auto;height:auto;background:transparent;font-size:18px}
+.hero h2{font-family:var(--disp);font-size:clamp(46px,6.4vw,92px);line-height:.92;letter-spacing:.01em;font-weight:700;color:var(--ink)}
+.hero h2 .pink{color:var(--magenta)}
+.hero h2 .outline{color:var(--cyan)}
+.hero p{max-width:520px;margin-top:24px;font-size:17px;color:#D8D8EA;line-height:1.7}
+.hero p b{color:#D6336C;font-weight:700}
+.hero-cta{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{font-family:var(--mono);font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:15px 26px;border:3px solid var(--ink);border-radius:999px;color:#2B2D42;background:#fff;cursor:pointer;transition:.2s;box-shadow:4px 4px 0 var(--ink);display:inline-flex;align-items:center;gap:10px}
+.btn:hover{transform:translate(-1px,-2px);box-shadow:5px 6px 0 var(--ink)}
+.btn-fill{background:var(--sunny);border-color:var(--ink);color:#2B2D42}
+.btn-fill:hover{background:#FFE066;box-shadow:5px 6px 0 var(--ink)}
+.hero-stats{display:flex;gap:34px;margin-top:40px;flex-wrap:wrap;border-top:1px dashed var(--line-bright);padding-top:22px}
+.hero-stats div{display:flex;flex-direction:column;gap:2px}
+.hero-stats .n{font-family:var(--disp);font-weight:700;font-size:34px;line-height:1;color:var(--ink)}
+.hero-stats .l{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.disc-wrap{position:relative;display:grid;place-items:center;min-height:440px;margin-top:36px;z-index:36}
+.orbit{position:absolute;width:400px;height:400px;border-radius:50%;border:1px dashed var(--line-bright);animation:spin 34s linear infinite}
+.orbit::before{content:'';position:absolute;top:-5px;left:50%;width:9px;height:9px;background:var(--magenta);border-radius:50%;transform:translateX(-50%);box-shadow:0 0 14px var(--magenta)}
+.orbit::after{content:'';position:absolute;bottom:-5px;left:50%;width:7px;height:7px;background:var(--lime);border-radius:50%;transform:translateX(-50%)}
+.disc{width:300px;height:300px;cursor:pointer;border-radius:50%;position:relative;background:repeating-radial-gradient(circle at 50% 50%,#15151c 0 2px,#0a0a0f 2px 5px);border:1px solid #2a2a34;box-shadow:0 0 80px rgba(214,255,61,.1),inset 0 0 50px rgba(0,0,0,.9);display:grid;place-items:center;animation:spin 9s linear infinite}
+.disc::before{content:'';position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,transparent 0deg,rgba(255,255,255,.05) 40deg,transparent 90deg)}
+.disc-label{width:104px;height:104px;border-radius:50%;background:var(--sunny);color:#2B2D42;border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--disp);font-weight:700;font-size:22px;letter-spacing:.1em;position:relative;z-index:2;box-shadow:0 0 0 6px #fff}
+@keyframes spin{to{transform:rotate(360deg)}}
+.disc-caption{position:absolute;bottom:24px;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:center}
+.disc-caption b{color:var(--lime)}
+.spectrum{display:flex;align-items:flex-end;gap:3px;height:120px;margin-top:52px;padding-top:0;border-top:1px solid var(--line)}
+.spectrum i{flex:1;height:100%;transform-origin:bottom;border-radius:1px 1px 0 0;background:linear-gradient(180deg,var(--magenta) 0%,var(--sunny) 55%,var(--cyan) 100%);border-radius:99px 99px 0 0;animation:bar 1s ease-in-out infinite alternate}
+@keyframes bar{0%{transform:scaleY(.08);opacity:.3}100%{transform:scaleY(1);opacity:1}}
+.sec-head{display:flex;align-items:center;gap:16px;margin:52px 0 20px}
+.sec-head .idx{font-family:var(--mono);font-size:12px;font-weight:800;color:#D6336C;letter-spacing:.08em;white-space:nowrap}
+.sec-head h3{font-family:var(--disp);font-size:32px;letter-spacing:.02em;font-weight:700;white-space:nowrap;color:var(--ink)}
+.sec-head .rule{flex:1;height:1px;background:repeating-linear-gradient(90deg,var(--line-bright) 0 6px,transparent 6px 12px)}
+.sec-head a{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap;transition:.2s}
+.sec-head a:hover{color:var(--lime)}
+.station-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.station{position:relative;display:flex;flex-direction:column;gap:9px;padding:22px;background:var(--panel);border:3px solid var(--ink);border-radius:24px;min-height:168px;overflow:hidden;transition:.22s;box-shadow:5px 5px 0 var(--line)}
+.station::after{content:'↗';position:absolute;top:16px;right:18px;font-size:15px;color:var(--muted);transition:.22s}
+.station:hover{background:var(--sunny);border-color:var(--ink);color:#2B2D42;transform:translateY(-4px) rotate(-1deg);box-shadow:7px 9px 0 var(--ink)}
+.station:hover::after{color:#08080a;transform:translate(2px,-2px)}
+.st-num{font-family:var(--disp);font-weight:700;font-size:36px;line-height:.9;color:var(--magenta);transition:.22s}
+.station:hover .st-num{color:#2B2D42}
+.st-name{font-size:13.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.st-desc{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--muted);transition:.22s}
+.station:hover .st-desc,.station:hover .st-live{color:rgba(8,8,10,.62)}
+.st-bar{height:3px;background:var(--line-bright);margin-top:auto;transition:.22s}
+.st-bar i{display:block;height:100%;background:var(--magenta);transition:.22s}
+.station:hover .st-bar{background:rgba(8,8,10,.18)}
+.station:hover .st-bar i{background:#08080a}
+.st-live{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);transition:.22s}
+.main-grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:36px;margin-top:8px}
+.panel{position:relative;background:var(--panel);border:3px solid var(--ink);border-radius:24px;box-shadow:5px 5px 0 var(--line)}
+.panel::before,.panel::after{display:none}
+.panel::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+.panel::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+.tracklist-head{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.tracklist-head b{color:var(--ink)}
+.track{display:grid;grid-template-columns:52px 1fr auto auto 34px;align-items:center;gap:18px;padding:18px;position:relative;border-bottom:1px solid var(--line);transition:.18s;cursor:pointer}
+.track:last-child{border-bottom:0}
+.track::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--lime);transform:scaleY(0);transition:.2s}
+.track:hover{background:var(--panel-2)}
+.track:hover::before{transform:scaleY(1)}
+.track-num{font-family:var(--mono);font-size:11.5px;color:var(--muted);transition:.18s}
+.track:hover .track-num{color:var(--lime)}
+.track-title{font-size:14.5px;font-weight:500;line-height:1.35}
+.track-meta{display:flex;gap:12px;margin-top:6px;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.track-meta .author{color:#9a9aa8}
+.track-tag{font-family:var(--mono);font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;border:2px solid var(--ink);border-radius:999px;color:var(--muted);white-space:nowrap;transition:.18s;background:#2E2E4E}
+.track:hover .track-tag{border-color:var(--line-bright);color:#c8c8d2}
+.track-tag.hot{color:var(--magenta);border-color:rgba(255,45,120,.42)}
+.track-tag.live{color:var(--cyan);border-color:rgba(34,230,255,.35)}
+.track-stats{font-family:var(--mono);font-size:10.5px;color:var(--muted);text-align:right;white-space:nowrap}
+.track-play{width:36px;height:36px;border-radius:50%;border:2px solid var(--ink);background:var(--sunny);display:grid;place-items:center;font-size:11px;color:#2B2D42;transition:.2s}
+.track:hover .track-play{background:var(--lime);border-color:var(--lime);color:#08080a;transform:scale(1.08)}
+.side{display:flex;flex-direction:column;gap:20px}
+.card{padding:20px}
+.card-title{font-family:var(--mono);font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:18px;display:flex;align-items:center;gap:9px}
+.card-title::before{content:'';width:5px;height:5px;background:var(--lime);border-radius:50%}
+.price{font-family:var(--disp);font-weight:700;font-size:56px;line-height:.9;color:#D6336C}
+.price small{font-size:20px;color:var(--ink)}
+.price-note{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin-top:10px;line-height:1.7}
+.check{list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:10px;font-size:13px;color:#c8c8d2}
+.check li::before{content:'✓ ';color:var(--lime);font-weight:700}
+.info-list{display:flex;flex-direction:column;gap:0}
+.info-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px dashed var(--line);font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.info-row:last-child{border-bottom:0}
+.info-row span:first-child{color:var(--muted)}
+.info-row span:last-child{color:var(--ink);font-weight:600}
+.info-row .up{color:var(--lime)}
+footer{margin-top:60px;padding:28px 0 40px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+footer a{transition:.2s}
+footer a:hover{color:var(--lime)}
+.footer-links{display:flex;gap:22px;flex-wrap:wrap}
+.playerbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;align-items:center;gap:18px;padding:12px 20px;background:#2E2E4E;color:var(--ink);border:3px solid var(--ink);border-radius:999px;box-shadow:5px 5px 0 var(--ink)}
+.pb-btn{width:44px;height:44px;border-radius:50%;background:var(--magenta);color:#fff;border:3px solid var(--ink);display:grid;place-items:center;font-size:13px;cursor:pointer;transition:.2s;flex-shrink:0;padding-left:3px}
+.pb-btn:hover{transform:scale(1.08) rotate(-4deg)}
+.pb-info{display:flex;flex-direction:column;gap:2px;min-width:0;max-width:420px}
+.pb-label{font-family:var(--mono);font-size:8.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--magenta)}
+.pb-title{font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:opacity .35s}
+.pb-progress{flex:1;height:2px;background:var(--line-bright);position:relative;overflow:hidden;min-width:60px;cursor:pointer}
+.pb-progress i{position:absolute;inset:0 auto 0 0;width:0%;background:var(--lime)}
+.pb-time{font-family:var(--mono);font-size:10px;color:var(--muted);white-space:nowrap}
+.pb-live{font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--magenta);display:flex;align-items:center;gap:7px;white-space:nowrap}
+.pb-live::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--magenta);animation:blink 1.4s infinite}
+@media (max-width:1080px){.hero-grid{grid-template-columns:1fr;gap:40px}.disc-wrap{min-height:360px;order:-1}.main-grid{grid-template-columns:1fr;gap:28px}.station-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:720px){.wrap{padding:0 18px}.brand h1{white-space:normal;font-size:clamp(44px,13vw,72px)}.on-air{align-items:flex-start}.station-grid{grid-template-columns:1fr}.track{grid-template-columns:36px 1fr 30px;gap:12px;padding:16px 14px}.track-tag,.track-stats{display:none}.hero-stats{gap:22px}.playerbar{padding:10px 16px;gap:12px}.pb-progress,.pb-time{display:none}.pb-info{max-width:none;flex:1}.disc{width:220px;height:220px}.orbit{width:300px;height:300px}.spectrum{height:80px}}
+@media (max-width:420px){.sec-head h3{font-size:22px}.hero h2{font-size:44px}}
+
+/* --- cute friends --- */
+.friends{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:20px}
+.friend{background:#2E2E4E;border:3px solid var(--ink);color:var(--ink);border-radius:24px;box-shadow:5px 5px 0 var(--line);padding:14px 10px;width:150px;text-align:center}
+.friend img{width:120px;height:120px;object-fit:contain;display:block;margin:0 auto}
+.friend b{display:block;font-family:var(--mono);font-size:12px;font-weight:800;margin-top:8px}
+.friend span{font-family:var(--mono);font-size:11px;color:var(--muted)}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-12px) rotate(2deg)}}
+.floaty{animation:floaty 3s ease-in-out infinite}
+.disc-friend{position:absolute;width:90px;height:90px;object-fit:contain;z-index:3}
+.disc-friend.left{left:-10px;top:10px}
+.disc-friend.right{right:-5px;bottom:40px}
+.hero-friend{width:110px;height:110px;object-fit:contain;vertical-align:middle}
+@keyframes bgDrift{from{background-position:0% 0%,0 0,28px 28px}to{background-position:100% 100%,56px 28px,84px 56px}}
+
+/* --- interactive disc --- */
+.disc-rotator{position:relative;display:grid;place-items:center;cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none}
+.disc-rotator:active{cursor:grabbing}
+.disc{transition:box-shadow .4s ease, transform .25s ease}
+.disc:hover{transform:scale(1.03)}
+.disc.playing{animation-duration:2.2s;box-shadow:0 0 60px rgba(255,217,61,.65),0 0 110px rgba(255,107,157,.45),inset 0 0 50px rgba(0,0,0,.9)}
+.disc-hint{position:absolute;bottom:0;left:0;right:0;font-family:var(--mono);font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:center}
+/* --- dim the lights --- */
+#lightsOverlay{position:fixed;inset:0;background:rgba(8,8,20,.45);opacity:0;pointer-events:none;transition:opacity .6s ease;z-index:35}
+body.lights-dim #lightsOverlay{opacity:1}
+body.lights-dim .hero{position:relative;z-index:36}
+body.lights-dim .disc{box-shadow:0 0 70px rgba(255,217,61,.8),0 0 130px rgba(255,107,157,.55),0 0 180px rgba(79,195,247,.4),inset 0 0 50px rgba(0,0,0,.9)}
+/* --- animated hero wash --- */
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(255,217,61,.14),rgba(255,107,157,.12),rgba(79,195,247,.14),rgba(107,203,119,.12));background-size:300% 300%;animation:washMove 12s ease-in-out infinite alternate;pointer-events:none}
+@keyframes washMove{from{background-position:0% 0%}to{background-position:100% 100%}}
+/* --- glow at the end of the page --- */
+.finale{margin-top:56px;padding:36px 24px;text-align:center;background:#2B2B47;border:3px solid var(--ink);border-radius:28px;box-shadow:5px 5px 0 var(--line)}
+.finale h3{font-family:var(--disp);font-weight:700;font-size:34px;color:var(--ink)}
+.finale p{color:#D8D8EA;max-width:520px;margin:10px auto 0}
+.finale-disc{width:150px;height:150px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;background:repeating-radial-gradient(circle at 50% 50%,#15151c 0 2px,#0a0a0f 2px 5px);border:3px solid var(--ink);cursor:pointer;animation:spin 9s linear infinite,glowPulse 2.6s ease-in-out infinite}
+.finale-disc span{width:58px;height:58px;border-radius:50%;background:var(--sunny);border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--disp);font-weight:700;font-size:15px;color:#2B2D42}
+@keyframes glowPulse{0%,100%{box-shadow:0 0 24px rgba(255,217,61,.55),0 0 60px rgba(255,107,157,.3)}50%{box-shadow:0 0 48px rgba(255,217,61,.95),0 0 120px rgba(255,107,157,.6),0 0 160px rgba(79,195,247,.45)}}
+
+/* --- DIM ANIMATED BACKGROUND --- */
+#bgAnim{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+#bgAnim .blob{position:absolute;width:440px;height:440px;border-radius:50%;filter:blur(90px);opacity:.38;animation:blobDrift 22s ease-in-out infinite alternate}
+#bgAnim .b1{background:#FF2D78;top:-120px;left:-80px}
+#bgAnim .b2{background:#22E6FF;bottom:-140px;right:-60px;animation-delay:-7s}
+#bgAnim .b3{background:#FFD93D;width:320px;height:320px;top:38%;left:55%;opacity:.22;animation-delay:-14s}
+@keyframes blobDrift{from{transform:translate(0,0) scale(1)}to{transform:translate(90px,60px) scale(1.15)}}
+#bgAnim .float-note{position:absolute;font-size:30px;opacity:.45;animation:riseNote 16s linear infinite}
+@keyframes riseNote{from{transform:translateY(105vh) rotate(-8deg)}to{transform:translateY(-12vh) rotate(10deg)}}
+.wrap{position:relative;z-index:1}
+.ticker{position:relative;z-index:50}
+/* --- COLORED TEXT, SLIGHT GLOW --- */
+.brand h1 .slash{color:var(--magenta);text-shadow:0 0 12px rgba(255,45,120,.75),0 0 32px rgba(255,45,120,.35)}
+.brand h1 .outline{color:var(--cyan);text-shadow:0 0 12px rgba(34,230,255,.75),0 0 32px rgba(34,230,255,.35)}
+.hero h2 .pink{color:var(--magenta);text-shadow:0 0 12px rgba(255,45,120,.75),0 0 32px rgba(255,45,120,.35)}
+.hero h2 .outline{color:var(--cyan);text-shadow:0 0 12px rgba(34,230,255,.75),0 0 32px rgba(34,230,255,.35)}
+.eyebrow{color:var(--lime);text-shadow:0 0 10px rgba(214,255,61,.65),0 0 26px rgba(214,255,61,.3)}
+.hero p b{color:var(--lime);text-shadow:0 0 10px rgba(214,255,61,.6)}
+.sec-head .idx{color:var(--lime);text-shadow:0 0 10px rgba(214,255,61,.65)}
+.st-num{color:var(--magenta);text-shadow:0 0 10px rgba(255,107,157,.7),0 0 26px rgba(255,107,157,.3)}
+.price{color:var(--magenta);text-shadow:0 0 12px rgba(255,107,157,.7),0 0 30px rgba(255,107,157,.35)}
+.disc-caption b{color:var(--lime);text-shadow:0 0 10px rgba(214,255,61,.65)}
+.finale h3{color:var(--ink);text-shadow:0 0 14px rgba(255,217,61,.55),0 0 34px rgba(255,107,157,.35)}
+</style>
+</head>
+<body>
+<div id="bgAnim" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i><span class="float-note" style="left:6%;animation-delay:0s">🎵</span><span class="float-note" style="left:22%;animation-delay:-5s;font-size:22px">⭐</span><span class="float-note" style="left:48%;animation-delay:-9s">🎵</span><span class="float-note" style="left:71%;animation-delay:-3s;font-size:22px">⭐</span><span class="float-note" style="left:88%;animation-delay:-12s">🎵</span></div>
+<div class="grain"></div>
+
+<!-- TICKER: real pack facts only, no invented counts -->
+<div class="ticker">
+  <div class="ticker-track">
+    <div class="ticker-half">
+      <span><b>● PACK 1 LIVE</b> 5 tunes · 15 files · for YouTube</span>
+      <span><span class="hl">LICENSE-FREE</span> No samples · 100% original</span>
+      <span><b>NO CLAIM</b> We will not Content ID your videos</span>
+      <span>Videos published while subscribed stay cleared forever</span>
+      <span><b>FOR CREATORS</b> YouTube · Shorts · TikTok · Reels</span>
+      <span><span class="hl">NEW</span> Epic Adventure — beat changes every 10s</span>
+    </div>
+    <div class="ticker-half">
+      <span><b>● PACK 1 LIVE</b> 5 tunes · 15 files · for YouTube</span>
+      <span><span class="hl">LICENSE-FREE</span> No samples · 100% original</span>
+      <span><b>NO CLAIM</b> We will not Content ID your videos</span>
+      <span>Videos published while subscribed stay cleared forever</span>
+      <span><b>FOR CREATORS</b> YouTube · Shorts · TikTok · Reels</span>
+      <span><span class="hl">NEW</span> Epic Adventure — beat changes every 10s</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="9" width="3" height="6" rx="1.5" fill="#08080a"/>
+          <rect x="7" y="4" width="3" height="16" rx="1.5" fill="#08080a"/>
+          <rect x="12" y="7" width="3" height="10" rx="1.5" fill="#08080a"/>
+          <rect x="17" y="2" width="3" height="20" rx="1.5" fill="#08080a"/>
+        </svg>
+      </div>
+      <h1>MUSE<span class="slash">/</span><span class="outline">TUNES</span></h1>
+      <p class="tagline">Muse AI · Creator Pack 1 &nbsp;·&nbsp; <b>License-free kids tunes</b> &nbsp;·&nbsp; for content creators</p>
+    </div>
+    <div class="on-air">
+      <div class="on-air-top"><span class="dot"></span> Pack 1 live</div>
+      <div class="vu" id="vu"></div>
+      <div class="clock" id="clock">00:00:00</div>
+    </div>
+  </header>
+
+  <nav class="rail">
+    <a href="#" class="active">Pack 1</a>
+    <a href="#moods">Moods</a>
+    <a href="#tracklist">Tunes</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#license">License</a>
+    <span class="spacer"></span>
+    <a href="#pricing" class="cta">Get Pack 1</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-ghost" aria-hidden="true">TUNES</div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow"><img class="hero-friend floaty" src="creator-pack-1/assets/cute-sun.png" alt="Smiling sun" style="width:64px;height:64px"> For YouTube — fun kids tunes, made to be used ☀️</div>
+        <h2>
+          DROP IT IN. 🎵<br>
+          <span class="pink">NO CLAIM.</span><br>
+          <span class="outline">KEEP THE MONEY.</span>
+        </h2>
+        <p>
+          Music for your YouTube videos and YouTube Shorts. 5 original kids tunes, made locally with <b>no samples, no third-party loops</b> — so the license is actually clean.
+          Drop a track under your YouTube video, monetize that video, and keep your revenue. We will not Content ID you on YouTube.
+        </p>
+        <div class="hero-cta">
+          <button class="btn btn-fill" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">▶ Get Pack 1</button>
+          <button class="btn" onclick="playTrack(0)">▶ Play Happy Playtime</button>
+          <button class="btn" id="dimBtn" type="button">🌙 Dim the lights</button>
+        </div>
+        <div class="hero-stats">
+          <div><span class="n">5</span><span class="l">Tunes</span></div>
+          <div><span class="n">15</span><span class="l">Files</span></div>
+          <div><span class="n">1</span><span class="l">License</span></div>
+          <div><span class="n">0</span><span class="l">Content ID claims</span></div>
+        </div>
+      </div>
+      <div class="disc-wrap">
+        <img class="disc-friend left floaty" src="creator-pack-1/assets/note-bounce.gif" alt="Bouncing music note">
+        <img class="disc-friend right floaty" src="creator-pack-1/assets/star-dance.gif" alt="Dancing star">
+        <div class="orbit"></div>
+        <div class="disc-rotator" id="discRotator"><div class="disc" id="disc" role="button" tabindex="0" aria-label="Spinning record — tap to play or pause, drag to spin"><div class="disc-label">MUSE</div></div></div>
+        <div class="disc-caption">Now playing —<br><b>🎵 YouTube · Happy Playtime</b></div>
+        <div class="disc-hint">👆 Tap the record to play · Drag it to spin</div>
+      </div>
+    </div>
+    <div class="spectrum" id="spectrum" aria-hidden="true"></div>
+  </section>
+
+
+
+  <!-- ================= CUTE FRIENDS ================= -->
+  <section id="friends" style="margin-top:44px">
+    <div class="sec-head">
+      <span class="idx">▚ 02</span>
+      <h3>MEET THE CUTE FRIENDS 🌈</h3>
+      <span class="rule"></span>
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime)">PNG · GIF · APNG</span>
+    </div>
+    <div class="friends">
+      <div class="friend"><img src="creator-pack-1/assets/cute-music-note.png" alt="Cute dancing music note"><b>Music Note</b><span>PNG · transparent</span></div>
+      <div class="friend"><img src="creator-pack-1/assets/cute-sun.png" alt="Cute smiling sun"><b>Sunny</b><span>PNG · transparent</span></div>
+      <div class="friend"><img src="creator-pack-1/assets/cute-rainbow.png" alt="Cute smiling rainbow"><b>Rainbow</b><span>PNG · transparent</span></div>
+      <div class="friend"><img src="creator-pack-1/assets/note-bounce.gif" alt="Bouncing music note animation"><b>Bouncing Note</b><span>GIF · animated</span></div>
+      <div class="friend"><img src="creator-pack-1/assets/star-dance.gif" alt="Dancing star animation"><b>Dancing Star</b><span>GIF · animated</span></div>
+      <div class="friend"><img src="creator-pack-1/assets/sun-wave.gif" alt="Waving sun animation"><b>Waving Sun</b><span>GIF · animated</span></div>
+      <div class="friend"><img src="creator-pack-1/assets/star-twinkle.apng" alt="Twinkling star animation"><b>Twinkle Star</b><span>APNG · animated transparent</span></div>
+      <div class="friend"><img src="creator-pack-1/assets/note-bounce.apng" alt="Bouncing note animation, transparent"><b>Bouncing Note</b><span>APNG · animated transparent</span></div>
+    </div>
+  </section>
+
+  <!-- ================= WHAT YOU'RE BUYING ================= -->
+  <section id="buying" style="margin-top:44px">
+    <div class="sec-head">
+      <span class="idx">▚ 01</span>
+      <h3>WHAT YOU'RE BUYING 🎁</h3>
+      <span class="rule"></span>
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime)">For YouTube</span>
+    </div>
+    <div class="panel card" style="padding:28px">
+      <p style="font-size:17px;line-height:1.7;max-width:820px">
+        <b style="color:var(--lime)">A music pack for YouTube creators.</b>
+        You buy 5 original kids tunes to play under your YouTube videos and YouTube Shorts —
+        happy, calm, epic, dance, and learning music — with a written license that says you are allowed to use them.
+        No copyright strike, no Content ID claim from us, no per-video fee.
+      </p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px">
+        <div style="border:1px solid var(--line);padding:18px"><div style="font-family:var(--disp);font-size:26px">5 TUNES</div><div style="font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:6px;line-height:1.7">Happy Playtime<br>Calm Bedtime<br>Epic Adventure<br>Bouncy Dance<br>Learning Focus</div></div>
+        <div style="border:1px solid var(--line);padding:18px"><div style="font-family:var(--disp);font-size:26px">15 FILES</div><div style="font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:6px;line-height:1.7">Each tune in 3 cuts:<br>60-second loop<br>30-second cut<br>20-second ringtone</div></div>
+        <div style="border:1px solid var(--line);padding:18px"><div style="font-family:var(--disp);font-size:26px">1 LICENSE</div><div style="font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:6px;line-height:1.7">Use in YouTube videos<br>Monetize them<br>Show LICENSE.txt<br>to YouTube if flagged</div></div>
+      </div>
+      <p style="margin-top:20px;font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.08em;line-height:1.8">
+        WHO IT'S FOR: a YouTube creator making kids videos who needs background music that will not get their video claimed.<br>
+        WHO IT'S NOT FOR: anyone who wants to resell the music itself, or register it as their own.
+      </p>
+    </div>
+  </section>
+
+  <section id="moods">
+    <div class="sec-head">
+      <span class="idx">▚ 02</span>
+      <h3>MOODS — FOR YOUTUBE 🎨</h3>
+      <span class="rule"></span>
+      <a href="#tracklist">Hear them all ↗</a>
+    </div>
+    <div class="station-grid">
+      <a class="station" href="#tracklist" onclick="playTrack(0);return false;">
+        <span class="st-num">01</span><span class="st-name">😊 Happy Playtime</span>
+        <span class="st-desc">bright · upbeat · piano + strings</span>
+        <span class="st-bar"><i style="width:84%"></i></span>
+        <span class="st-live">● 60s loop · 30s cut · 20s ringtone</span>
+      </a>
+      <a class="station" href="#tracklist" onclick="playTrack(1);return false;">
+        <span class="st-num">02</span><span class="st-name">😴 Calm Bedtime</span>
+        <span class="st-desc">slow · soft · flute + strings</span>
+        <span class="st-bar"><i style="width:66%"></i></span>
+        <span class="st-live">● 60s loop · 30s cut · 20s ringtone</span>
+      </a>
+      <a class="station" href="#tracklist" onclick="playTrack(2);return false;">
+        <span class="st-num">03</span><span class="st-name">🚀 Epic Adventure</span>
+        <span class="st-desc">orchestra · builds every 5s</span>
+        <span class="st-bar"><i style="width:92%"></i></span>
+        <span class="st-live">● 60s loop · beat changes every 10s</span>
+      </a>
+      <a class="station" href="#tracklist" onclick="playTrack(3);return false;">
+        <span class="st-num">04</span><span class="st-name">💃 Bouncy Dance</span>
+        <span class="st-desc">fast · syncopated · bouncy drums</span>
+        <span class="st-bar"><i style="width:74%"></i></span>
+        <span class="st-live">● 60s loop · 30s cut · 20s ringtone</span>
+      </a>
+      <a class="station" href="#tracklist" onclick="playTrack(4);return false;">
+        <span class="st-num">05</span><span class="st-name">📚 Learning Focus</span>
+        <span class="st-desc">simple · gentle · piano + cello</span>
+        <span class="st-bar"><i style="width:52%"></i></span>
+        <span class="st-live">● 60s loop · 30s cut · 20s ringtone</span>
+      </a>
+      <a class="station" href="#license">
+        <span class="st-num">06</span><span class="st-name">📜 The License</span>
+        <span class="st-desc">use it · show it · stay cleared</span>
+        <span class="st-bar"><i style="width:100%"></i></span>
+        <span class="st-live">● Included in the pack · LICENSE.txt</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="main-grid">
+    <section id="tracklist">
+      <div class="sec-head" style="margin-top:44px">
+        <span class="idx">▚ 03</span>
+        <h3>TUNES — PACK 1 🎧</h3>
+        <span class="rule"></span>
+        <a href="#pricing">Get the pack ↗</a>
+      </div>
+      <div class="panel">
+        <div class="tracklist-head"><span>Made for YouTube — click a tune to play it</span><span><b>5</b> tunes</span></div>
+        <div class="track" data-i="0" data-src="creator-pack-1/01-happy-playtime-60s.mp3" data-title="Happy Playtime — 60s loop">
+          <span class="track-num">01</span>
+          <span class="track-main"><span class="track-title">😊 Happy Playtime</span><span class="track-meta"><span class="author">Creator Pack 1</span><span>60s loop · MP3</span></span></span>
+          <span class="track-tag hot">PLAY</span><span class="track-stats">60s · 30s · 20s</span><span class="track-play">▶</span>
+        </div>
+        <div class="track" data-i="1" data-src="creator-pack-1/02-calm-bedtime-60s.mp3" data-title="Calm Bedtime — 60s loop">
+          <span class="track-num">02</span>
+          <span class="track-main"><span class="track-title">😴 Calm Bedtime</span><span class="track-meta"><span class="author">Creator Pack 1</span><span>60s loop · MP3</span></span></span>
+          <span class="track-tag">CALM</span><span class="track-stats">60s · 30s · 20s</span><span class="track-play">▶</span>
+        </div>
+        <div class="track" data-i="2" data-src="creator-pack-1/03-epic-adventure-60s.mp3" data-title="Epic Adventure — 60s loop">
+          <span class="track-num">03</span>
+          <span class="track-main"><span class="track-title">🚀 Epic Adventure — builds every 5s, beat changes every 10s</span><span class="track-meta"><span class="author">Creator Pack 1</span><span>60s loop · MP3</span></span></span>
+          <span class="track-tag live">EPIC</span><span class="track-stats">60s · 30s · 20s</span><span class="track-play">▶</span>
+        </div>
+        <div class="track" data-i="3" data-src="creator-pack-1/04-bouncy-dance-60s.mp3" data-title="Bouncy Dance — 60s loop">
+          <span class="track-num">04</span>
+          <span class="track-main"><span class="track-title">💃 Bouncy Dance</span><span class="track-meta"><span class="author">Creator Pack 1</span><span>60s loop · MP3</span></span></span>
+          <span class="track-tag">DANCE</span><span class="track-stats">60s · 30s · 20s</span><span class="track-play">▶</span>
+        </div>
+        <div class="track" data-i="4" data-src="creator-pack-1/05-learning-focus-60s.mp3" data-title="Learning Focus — 60s loop">
+          <span class="track-num">05</span>
+          <span class="track-main"><span class="track-title">📚 Learning Focus</span><span class="track-meta"><span class="author">Creator Pack 1</span><span>60s loop · MP3</span></span></span>
+          <span class="track-tag">FOCUS</span><span class="track-stats">60s · 30s · 20s</span><span class="track-play">▶</span>
+        </div>
+      </div>
+      <p style="margin-top:16px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;line-height:1.8">
+        Each tune also ships as a 30-second cut and a 20-second ringtone in the pack zip.<br>
+        Ringtones: creator-pack-1/*-ringtone-20s.mp3 · Cuts: creator-pack-1/*-30s.mp3
+      </p>
+    </section>
+
+    <aside class="side">
+      <div class="panel card" id="pricing">
+        <div class="card-title">Pricing — subscription only</div>
+        <div class="price">$5<small>/mo</small></div>
+        <div class="price-note">Creator · $49/year — save $11<br>New tunes added monthly</div>
+        <ul class="check">
+          <li>All 5 tunes, all cuts, all ringtones</li>
+          <li>License included — show it to YouTube</li>
+          <li>Videos published while subscribed stay cleared forever</li>
+          <li>Use in monetized videos — keep your revenue</li>
+        </ul>
+        <div style="margin-top:20px"><a class="btn btn-fill" href="#pricing" style="display:block;text-align:center">Get Pack 1</a></div>
+        <p style="margin-top:14px;font-family:var(--mono);font-size:9.5px;color:var(--muted);line-height:1.7;letter-spacing:.06em">
+          MARKET CHECK, NOV 2026: Epidemic Sound $9.99/mo billed yearly, Artlist $9.99–$16.60/mo billed yearly. Pack 1 undercuts them.
+        </p>
+      </div>
+
+      <div class="panel card" id="license">
+        <div class="card-title">License — what you get</div>
+        <div class="info-list">
+          <div class="info-row"><span>Use in videos</span><span class="up">Yes</span></div>
+          <div class="info-row"><span>Monetized videos</span><span class="up">Yes</span></div>
+          <div class="info-row"><span>Content ID claim</span><span class="up">None from us</span></div>
+          <div class="info-row"><span>Resell / re-upload music</span><span>No</span></div>
+          <div class="info-row"><span>Register as your own</span><span>No</span></div>
+          <div class="info-row"><span>License file</span><span>LICENSE.txt</span></div>
+        </div>
+        <p style="margin-top:16px;font-size:13px;color:#b9b9c4;line-height:1.7">
+          If YouTube flags a video, show LICENSE.txt + your receipt. Keep both.
+          Full terms are in LICENSE.txt in the pack.
+        </p>
+      </div>
+
+      <div class="panel card">
+        <div class="card-title">How it works</div>
+        <div class="info-list">
+          <div class="info-row"><span>1 · Subscribe</span><span>Monthly</span></div>
+          <div class="info-row"><span>2 · Download</span><span>15 MP3s</span></div>
+          <div class="info-row"><span>3 · Upload to YouTube</span><span>Loop it</span></div>
+          <div class="info-row"><span>4 · Stay cleared</span><span class="up">Forever*</span></div>
+        </div>
+        <p style="margin-top:12px;font-family:var(--mono);font-size:9.5px;color:var(--muted);line-height:1.7">*For videos published while subscribed.</p>
+      </div>
+    </aside>
+  </div>
+
+
+  <!-- ================= FINALE — GLOW ================= -->
+  <section class="finale">
+    <div class="finale-disc" id="finaleDisc" role="button" tabindex="0" aria-label="Glowing record — tap to play"><span>MUSE</span></div>
+    <h3>✨ Keep the music playing ✨</h3>
+    <p>That glow is the last thing on the page — tap the record above and it plays Happy Playtime for your next YouTube video.</p>
+    <div class="hero-cta" style="justify-content:center">
+      <button class="btn btn-fill" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">▶ Get Pack 1</button>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Creator Pack 1 · License-free kids tunes for YouTube</span>
+    <div class="footer-links">
+      <a href="#license">License</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#pricing">Pricing</a>
+    </div>
+  </footer>
+</div>
+
+<audio id="audio" preload="metadata"></audio>
+<div id="lightsOverlay" aria-hidden="true"></div>
+<div class="playerbar">
+  <button class="pb-btn" id="pbBtn" aria-label="Play">▶</button>
+  <div class="pb-info">
+    <span class="pb-label">Now playing — Pack 1</span>
+    <span class="pb-title" id="pbTitle">Happy Playtime — 60s loop</span>
+  </div>
+  <div class="pb-progress" id="pbProgress"><i id="pbFill"></i></div>
+  <span class="pb-time" id="pbTime">00:00 / 01:00</span>
+  <span class="pb-live">License-free</span>
+</div>
+
+<script>
+(function () {
+  var spectrum = document.getElementById('spectrum');
+  for (var i = 0; i < 58; i++) {
+    var b = document.createElement('i');
+    b.style.animationDelay = (i * 0.032).toFixed(3) + 's';
+    b.style.animationDuration = (0.75 + Math.random() * 0.9).toFixed(2) + 's';
+    b.style.opacity = (0.45 + Math.random() * 0.55).toFixed(2);
+    spectrum.appendChild(b);
+  }
+  var vu = document.getElementById('vu');
+  for (var j = 0; j < 14; j++) {
+    var bar = document.createElement('i');
+    bar.style.animationDelay = (j * 0.07).toFixed(2) + 's';
+    bar.style.animationDuration = (0.55 + Math.random() * 0.7).toFixed(2) + 's';
+    bar.style.background = j > 10 ? 'var(--magenta)' : 'var(--lime)';
+    vu.appendChild(bar);
+  }
+  var clock = document.getElementById('clock');
+  function tick() { clock.textContent = new Date().toLocaleTimeString('en-GB'); }
+  tick(); setInterval(tick, 1000);
+
+  /* Real player — plays the actual Pack 1 MP3s in creator-pack-1/ */
+  var audio = document.getElementById('audio');
+  var pbBtn = document.getElementById('pbBtn');
+  var pbTitle = document.getElementById('pbTitle');
+  var pbFill = document.getElementById('pbFill');
+  var pbTime = document.getElementById('pbTime');
+  var tracks = Array.prototype.slice.call(document.querySelectorAll('.track'));
+  var current = -1;
+  function fmt(s){ if(!isFinite(s)) return '00:00'; var m=Math.floor(s/60), ss=Math.floor(s%60); return (m<10?'0':'')+m+':'+(ss<10?'0':'')+ss; }
+  function playTrack(i){
+    var t = tracks[i]; if(!t) return;
+    var src = t.getAttribute('data-src');
+    if (current !== i) { audio.src = src; pbTitle.textContent = t.getAttribute('data-title'); current = i; }
+    audio.play().catch(function(){ pbTitle.textContent = 'Audio file not found next to this page — put creator-pack-1/ beside it: ' + src; });
+    pbBtn.textContent = '❚❚';
+  }
+  window.playTrack = playTrack;
+  tracks.forEach(function(t, i){
+    t.addEventListener('click', function(e){ e.preventDefault(); if(current===i && !audio.paused){ audio.pause(); pbBtn.textContent='▶'; } else { playTrack(i); } });
+  });
+  pbBtn.addEventListener('click', function(){
+    if (audio.paused) { if(current<0) playTrack(0); else audio.play(); pbBtn.textContent='❚❚'; }
+    else { audio.pause(); pbBtn.textContent='▶'; }
+  });
+  audio.addEventListener('timeupdate', function(){
+    if(audio.duration){ pbFill.style.width = (audio.currentTime/audio.duration*100)+'%'; pbTime.textContent = fmt(audio.currentTime)+' / '+fmt(audio.duration); }
+  });
+  audio.addEventListener('ended', function(){ pbBtn.textContent='▶'; pbFill.style.width='0%'; });
+
+  /* --- Interactive spinning record --- */
+  var disc = document.getElementById('disc');
+  var rotator = document.getElementById('discRotator');
+  var finaleDisc = document.getElementById('finaleDisc');
+  var dimBtn = document.getElementById('dimBtn');
+  var manualDim = false;
+  function setDim(on){ document.body.classList.toggle('lights-dim', on); if(dimBtn) dimBtn.textContent = on ? '☀️ Lights up' : '🌙 Dim the lights'; }
+  if(dimBtn) dimBtn.addEventListener('click', function(){ manualDim = !document.body.classList.contains('lights-dim'); setDim(manualDim); });
+  function togglePlay(){
+    if (audio.paused) { if(current<0) playTrack(0); else audio.play(); pbBtn.textContent='❚❚'; disc.classList.add('playing'); setDim(true); }
+    else { audio.pause(); pbBtn.textContent='▶'; disc.classList.remove('playing'); if(!manualDim) setDim(false); }
+  }
+  audio.addEventListener('ended', function(){ disc.classList.remove('playing'); if(!manualDim) setDim(false); });
+  // drag to spin
+  var dragging=false, moved=0, lastAngle=0, rot=0;
+  function angleFromCenter(e){ var r=rotator.getBoundingClientRect(); return Math.atan2(e.clientY-(r.top+r.height/2), e.clientX-(r.left+r.width/2))*180/Math.PI; }
+  rotator.addEventListener('pointerdown', function(e){ dragging=true; moved=0; lastAngle=angleFromCenter(e); rotator.setPointerCapture(e.pointerId); });
+  rotator.addEventListener('pointermove', function(e){
+    if(!dragging) return;
+    var a=angleFromCenter(e), d=a-lastAngle;
+    if(d>180) d-=360; if(d<-180) d+=360;
+    moved+=Math.abs(d); rot+=d; lastAngle=a;
+    rotator.style.transform='rotate('+rot+'deg)';
+  });
+  function endDrag(e){ if(!dragging) return; dragging=false; if(moved<6) togglePlay(); }
+  rotator.addEventListener('pointerup', endDrag);
+  rotator.addEventListener('pointercancel', function(){ dragging=false; });
+  disc.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); togglePlay(); } });
+  if(finaleDisc) finaleDisc.addEventListener('click', function(){ togglePlay(); });
+  document.getElementById('pbProgress').addEventListener('click', function(e){
+    var r=this.getBoundingClientRect(); if(audio.duration){ audio.currentTime = (e.clientX-r.left)/r.width*audio.duration; }
+  });
+})();
+</script>
+</body>
+</html>
+Here it is — full tree, in chat, not just a file. Saved too as creator-pack-1-file-tree.md.
+
+Status: built locally, launched as a Muse AI space (slug creator-pack-1). No GitHub repo created yet — GitHub is zero writes for me, you upload yourself. This is the proposed repo layout. Working repo name: Creator-Pack-1, not settled.
+
+Counts, verified: 15 MP3s, 8 images used on the page, 1 HTML page, 1 license, 1 zip. Pack folder on disk: 7.3 MB total.
+
+What each part does
+
+creator-pack-1.html — the whole page in one file. Ticker, MUSE/TUNES masthead, hero ("Drop it in. No claim. Keep the money."), What You're Buying, Meet the Cute Friends, Moods for YouTube, Tunes (playable), Pricing, License, How It Works, footer, then the glowing finale record at the very end. The record is 300px, sits lower, tap to play/pause, drag to spin, Enter/Space works, spins faster while playing. Background is dim dark indigo, animated, colored text slightly glows. Dim the lights button dims it a little more.
+tunes/ — 😊 Happy Playtime, 😴 Calm Bedtime, 🚀 Epic Adventure, 💃 Bouncy Dance, 📚 Learning Focus. All original, made locally by Python synthesis, no samples, no Runway. Durations verified by ffprobe: exactly 60.0 / 30.0 / 20.0s.
+assets/ — PNGs made transparent by flood-fill from the edges, corner alpha 0 verified, no white box. GIFs and APNGs drawn in code with true transparency.
+LICENSE.txt — non-exclusive: use in YouTube / Shorts / TikTok / Reels / podcasts / streams and monetized videos, keep the revenue, no Content ID claim from us, show LICENSE.txt + receipt if flagged. Cannot resell or redistribute, cannot claim or register the music, TV / film / ad needs a separate license.
+scripts/ — how it was built, so Pack 2 can be built the same way.
+space/ — why a space: a bare HTML file needs its folder beside it or images break; a space hosts the page with its files inside it.
+
+FAQ, short version
+
+What am I buying? 5 tunes, 15 files, 1 license. Who's it for? A YouTube creator making kids videos who needs music that won't get claimed. Who's it NOT for? Resellers. How much? $5/month, $49/year, subscription only. What if I cancel? Videos published while subscribed stay cleared forever. Will I get a claim? No claim from us. Can I monetize? Yes, keep the revenue. Can I use it on Shorts, TikTok, Reels, podcasts, streams? Yes. Can I resell? No. Can I claim it as mine? No. TV / film / ad? Separate license. Why no FED on the page? Your call, 2026-11-14. Why does $5 only appear once? Same call. Is there a GitHub repo yet? No, this tree is the layout to upload.
+
+Open questions: repo name (Creator-Pack-1 is working name, not confirmed), Pack 2 first or shop listing first, where the space gets shared from.# Creator Pack 1 — GitHub File Tree (Expansive)
+
+**What this is:** Creator Pack 1 — 5 original, license-free kids tunes for YouTube creators. Each tune comes as a 60-second loop, a 30-second cut, and a 20-second ringtone. 15 MP3s total. Creators buy a license, drop a track under a YouTube video / YouTube Short, monetize it, and keep the revenue. We will not Content ID them on YouTube.
+
+**Status on 2026-11-15 ~11:13 EST:** Built locally, launched as a Muse AI space (slug `creator-pack-1`, so the images actually load). **No GitHub repo has been created yet** — GitHub is zero writes for Muse, Git-FED uploads himself. This tree is the proposed repo layout to upload. Repo name is not settled — `Creator-Pack-1` is the working name used here.
+
+**Money:** $5/month Creator, $49/year. Subscription only. Videos published while subscribed stay cleared forever, even after cancel.
+
+**Rules baked into the page:** No word "FED" anywhere on the page. $5 appears exactly once (the pricing card). YouTube is front and center.
+
+---
+
+## The tree
+
+```
+Creator-Pack-1/
+│
+├── README.md                          — what it is, who it's for, how to buy, how to use
+├── LICENSE.txt                        — the actual license creators get (also inside the pack)
+├── creator-pack-1.html                — the landing page (48,837 bytes, the live space page)
+├── creator-pack-1.zip                 — the whole pack zipped (4.1 MB, download for buyers)
+│
+├── tunes/                             — all 15 MP3s, verified durations, no samples, no loops
+│   ├── 01-happy-playtime-60s.mp3          (60.0s, 480 KB) — bright, piano + strings
+│   ├── 01-happy-playtime-30s.mp3          (30.0s, 241 KB)
+│   ├── 01-happy-playtime-ringtone-20s.mp3 (20.0s, 161 KB)
+│   ├── 02-calm-bedtime-60s.mp3            (60.0s, 480 KB) — slow, flute + strings, no drums
+│   ├── 02-calm-bedtime-30s.mp3            (30.0s, 241 KB)
+│   ├── 02-calm-bedtime-ringtone-20s.mp3   (20.0s, 161 KB)
+│   ├── 03-epic-adventure-60s.mp3          (60.0s, 480 KB) — orchestral build, 5s build / 10s beat change
+│   ├── 03-epic-adventure-30s.mp3          (30.0s, 241 KB)
+│   ├── 03-epic-adventure-ringtone-20s.mp3 (20.0s, 161 KB)
+│   ├── 04-bouncy-dance-60s.mp3            (60.0s, 480 KB) — fast, syncopated
+│   ├── 04-bouncy-dance-30s.mp3            (30.0s, 241 KB)
+│   ├── 04-bouncy-dance-ringtone-20s.mp3   (20.0s, 161 KB)
+│   ├── 05-learning-focus-60s.mp3          (60.0s, 480 KB) — simple, piano + cello
+│   ├── 05-learning-focus-30s.mp3          (30.0s, 241 KB)
+│   └── 05-learning-focus-ringtone-20s.mp3 (20.0s, 161 KB)
+│
+├── assets/                            — cute images, all used on the page
+│   ├── cute-music-note.png            (361 KB, 1600×1600, transparent — corner alpha 0 verified)
+│   ├── cute-sun.png                   (441 KB, 1600×1600, transparent)
+│   ├── cute-rainbow.png               (684 KB, 1920×1280, transparent)
+│   ├── note-bounce.gif                (9 KB, 240×240, 8 frames, animated, transparent)
+│   ├── star-dance.gif                 (7 KB, 240×240, 8 frames, animated, transparent)
+│   ├── sun-wave.gif                   (6 KB, 240×240, animated, transparent)
+│   ├── note-bounce.apng               (7 KB, 240×240, 8 frames, animated transparent PNG)
+│   └── star-twinkle.apng              (8 KB, 240×240, 6 frames, animated transparent PNG)
+│
+├── assets/originals/                  — source files, NOT used on the page (keep or drop)
+│   ├── media-generation-cute-music-note-0-*.png    (426 KB, white background — before transparency fix)
+│   ├── media-generation-cute-sun-0-*.png           (472 KB, white background)
+│   ├── media-generation-cute-rainbow-0-*.png       (673 KB, white background)
+│   └── media-generation-cute-*.json                (3 × 631 bytes, generation metadata)
+│
+├── docs/
+│   ├── FAQ.md                         — every question below, in the repo
+│   ├── PRICING.md                     — $5/mo, $49/yr, what the subscription covers, what happens on cancel
+│   ├── LICENSE-EXPLAINED.md           — the license in plain words (not legal advice)
+│   ├── HOW-TO-USE.md                  — drop the MP3 under a YouTube video, Short, TikTok, Reel, podcast, stream
+│   ├── FOR-CREATORS.md                — who it's for / who it's NOT for (resellers are not buyers)
+│   └── CHANGELOG.md                   — Pack 1 (2026-11-14), kids restyle, dim background, space launch
+│
+├── scripts/                           — how the pack was made (local build scripts, not on the page)
+│   ├── creator-pack.py                — generates all 5 tunes / 15 MP3s (numpy + ffmpeg, no samples, no Runway)
+│   ├── make-cute-animations.py        — makes the transparent PNGs, GIFs and APNGs, verifies corner alpha
+│   ├── fix-pack-html.py               — first fix: FED 0, $5 once, YouTube clear, WHAT YOU'RE BUYING
+│   ├── restyle-kids.py                — kids-site restyle: cream, Fredoka + Baloo 2, rounded cards
+│   ├── add-cute-to-html.py            — adds the Meet the Cute Friends section
+│   ├── disc-interactive.py            — disc lower + larger, tap/drag to play, dim lights, glow finale
+│   └── fix-background-dim-glow.py     — dim background, colored text slightly glowing
+│
+├── space/
+│   ├── README.md                      — the Muse AI space (slug creator-pack-1): why a space, not a bare HTML file
+│   └── SPACE-NOTES.md                 — space serves its own files only; HTML pointed at creator-pack-1/ beside it,
+│                                        so images only load once everything lives inside the space's assets
+│
+└── shop/
+    └── SHOP.md                        — sell direct on his own shop/stack, subscription only, no third-party cut
+```
+
+**File counts (local, verified 2026-11-15):** 15 MP3s, 8 images used on the page (3 transparent PNGs + 3 GIFs + 2 APNGs), 1 HTML page, 1 LICENSE.txt, 1 README-PACK-1.md, 1 zip (4.1 MB). Pack folder on disk: 7.3 MB total. HTML: 48,837 bytes.
+
+**Note on paths:** On the page, MP3s are referenced as `creator-pack-1/01-happy-playtime-60s.mp3` etc., and images as `creator-pack-1/assets/cute-sun.png` etc. In the space, those same files live in the space's own assets folder and the paths point there. In the proposed GitHub repo above, `tunes/` and `assets/` are the same files, just renamed into folders a reader can find.
+
+---
+
+## What each part does, in plain words
+
+**`creator-pack-1.html` — the page.** The whole landing page in one file. Sections, in order: ticker, masthead (MUSE/TUNES), hero ("Drop it in. No claim. Keep the money." — music for your YouTube videos and YouTube Shorts), What You're Buying, Meet the Cute Friends, Moods for YouTube, Tunes — Pack 1 (playable), Pricing, License, How It Works, footer, then the glowing finale record at the very end. The spinning record in the hero is 300px, sits lower, and is interactive: tap it to play/pause Happy Playtime, drag it to spin it by hand, keyboard Enter/Space works, it spins faster while playing. Background is dim dark indigo, animated (drifting gradient + pink/cyan/yellow glow blobs + 🎵⭐ notes floating up), colored text slightly glows. "Dim the lights" button dims the page a little more; the hero stays lit like a stage.
+
+**`tunes/` — the product.** The 5 moods are: 😊 Happy Playtime, 😴 Calm Bedtime, 🚀 Epic Adventure, 💃 Bouncy Dance, 📚 Learning Focus. Every tune is original, made locally by Python synthesis (numpy + ffmpeg), no samples, no third-party loops, no Runway — so the license is actually clean. All durations verified by ffprobe: exactly 60.0 / 30.0 / 20.0 seconds.
+
+**`assets/` — the cute friends.** The 3 PNGs were AI-generated on white, then made transparent by flood-filling from the edges — corner alpha 0 verified, so no white box on the page. The GIFs and APNGs were drawn in code with true transparency (8 frames, 6 frames for the twinkling star).
+
+**`LICENSE.txt` — the deal.** Non-exclusive license: use in YouTube / Shorts / TikTok / Reels / podcasts / streams and monetized videos, keep the revenue, no Content ID claim from us, show LICENSE.txt + receipt if flagged. Cannot resell or redistribute the files, cannot claim or register the music as your own, TV / film / ad campaign needs a separate license.
+
+**`scripts/` — how it was built.** These are the local Python scripts that generated and fixed everything. They are not needed to use the pack, and they are not on the page — they are in the tree so the next pack (Pack 2) can be built the same way, and so a reader can see nothing was sampled or stolen.
+
+**`space/` — why a space.** A bare HTML file needs the `creator-pack-1/` folder sitting beside it or the play buttons and images break. A Muse AI space hosts the whole page with its files inside it, so the images actually work.
+
+---
+
+## FAQ — every question a reader could have
+
+**1. What am I buying?** A music pack for YouTube creators: 5 tunes, 15 files, 1 license. Not a single song, not a streaming subscription to listen to.
+
+**2. Who is this for?** A YouTube creator making kids videos who needs music that won't get claimed.
+
+**3. Who is it NOT for?** Resellers. People who want to resell, redistribute, or claim the files as their own.
+
+**4. How much is it?** $5/month, or $49/year. Subscription only.
+
+**5. What does the subscription get me?** Pack 1, plus new tunes added monthly while subscribed.
+
+**6. What happens if I cancel?** Videos you published while subscribed stay cleared forever, even after you cancel.
+
+**7. Will I get a copyright claim on YouTube?** No claim from us. If YouTube flags it anyway, show LICENSE.txt + your receipt.
+
+**8. Can I monetize videos with this music?** Yes. That's the point. Keep the revenue.
+
+**9. Can I use it on Shorts, TikTok, Reels, podcasts, streams?** Yes — YouTube / Shorts / TikTok / Reels / podcasts / streams are all in the license.
+
+**10. Can I use the 20-second ringtone in a video?** Yes, it's a cut of the same tune, same license. It's called a ringtone because it's 20 seconds.
+
+**11. Can I resell the MP3s?** No. Cannot resell or redistribute the files.
+
+**12. Can I register / claim the music as mine?** No. Cannot claim or register it.
+
+**13. Can I use it in a TV show, film, or ad campaign?** Not under this license — that needs a separate license.
+
+**14. Are the tunes really original?** Yes. Made locally by Python synthesis, no samples, no third-party loops, no Runway.
+
+**15. Why is there no "FED" on the page?** Git-FED's call, 2026-11-14: don't use the word FED on this page. Brand is MUSE/TUNES.
+
+**16. Why does $5 only appear once?** Same call: $5 everywhere was confusing. It appears once, in the pricing card only.
+
+**17. Why is YouTube everywhere on the page?** Same call: it wasn't clear what we were selling or that it was for YouTube. Hero, ticker, tracklist, license and How It Works all say YouTube explicitly now.
+
+**18. How do I play a tune before I buy?** Tap the spinning record in the hero, or any tune in the tracklist. The player bar at the bottom plays the real MP3s.
+
+**19. How does the spinning record work?** Tap/click to play or pause, drag it to spin it by hand, Enter/Space on keyboard works. It spins faster while playing, and dims the lights a little while it plays.
+
+**20. What are the cute friends?** The characters on the page: Music Note, Sunny the sun, Rainbow, plus the bouncing note, dancing star, waving sun, and twinkling star animations. PNGs are transparent, GIFs and APNGs are animated and transparent.
+
+**21. Why launch it as a space?** So the images actually work. A bare HTML file needs its folder beside it; a space hosts the page with its files inside it.
+
+**22. Is there a GitHub repo yet?** No. This tree is the proposed layout. GitHub is zero writes for Muse — Git-FED uploads himself, one repo per project.
+
+**23. What's next — Pack 2, or the shop?** Open. Both were offered, neither ordered yet. Pack 2 would be 5 new tunes, same format. The shop would list Pack 1 for sale on his own stack.
+
+**24. Where does the money go?** His own shop/stack, subscription only. No third-party platform cut unless he names one.
+
+---
+
+## Open questions (not decided yet)
+
+1. Repo name on GitHub — `Creator-Pack-1` is the working name, not confirmed.
+2. Pack 2 first, or shop listing first?
+3. Where does the space get shared from — the space link, or the shop?
+
